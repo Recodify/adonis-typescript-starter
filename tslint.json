@@ -4,12 +4,12 @@
         "tslint:recommended"
     ],
     "jsRules": {
-        "quotemark": false,
+        "quotemark": false
     },
     "rules": {
         "quotemark": false,
         "trailing-comma": false,
-        "semicolon": false,
+        "semicolon": true,
         "typedef-whitespace": true,
         "eofline": false,
         "member-access": false,
