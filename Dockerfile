@@ -3,6 +3,8 @@ FROM node:8
 # Change working directory
 WORKDIR "/app"
 
+ADD .env /app
+
 # Update packages and install dependency packages for services
 RUN apt-get update \
  && apt-get dist-upgrade -y \
@@ -10,7 +12,7 @@ RUN apt-get update \
  && echo 'Finished installing dependencies'
 
 # Copy package.json and package-lock.json
-COPY package*.json .
+ADD package.json /app
 
 # Install npm production packages 
 RUN npm install --production

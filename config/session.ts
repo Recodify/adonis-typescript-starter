@@ -3,7 +3,7 @@
 /** @type {import('@adonisjs/framework/src/Env')} */
 const Env = use('Env')
 
-module.exports = {
+export = {
   /*
   |--------------------------------------------------------------------------
   | Session Driver

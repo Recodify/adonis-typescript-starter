@@ -1,6 +1,6 @@
 'use strict'
 
-module.exports = {
+export = {
   /*
   |--------------------------------------------------------------------------
   | Content Security Policy

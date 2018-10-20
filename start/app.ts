@@ -1,5 +1,3 @@
-'use strict'
-
 /*
 |--------------------------------------------------------------------------
 | Providers
@@ -56,6 +54,6 @@ const aliases = {}
 | Here you store ace commands for your package
 |
 */
-const commands = []
+const commands : string[] = []
 
 module.exports = { providers, aceProviders, aliases, commands }
