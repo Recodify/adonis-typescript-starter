@@ -3,8 +3,6 @@ FROM node:8
 # Change working directory
 WORKDIR "/app"
 
-ADD .env /app
-
 # Update packages and install dependency packages for services
 RUN apt-get update \
  && apt-get dist-upgrade -y \
