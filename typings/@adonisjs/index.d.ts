@@ -12455,6 +12455,8 @@ interface Suite {
       */
     new (title : string): Suite;
 
+    (title : string): Suite;
+
     /**
       * Each suite is a japa group with some extras
       * on top of it.

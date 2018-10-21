@@ -13,7 +13,8 @@
         "typedef-whitespace": true,
         "eofline": false,
         "member-access": false,
-        "space-before-function-paren": false
+        "space-before-function-paren": false,
+        "no-console": false
     },
     "rulesDirectory": []
 }

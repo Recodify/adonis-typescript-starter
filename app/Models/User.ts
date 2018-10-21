@@ -1,20 +1,20 @@
-const Hash = use('Hash')
-const Model = use('Model')
+const Hash = use('Hash');
+const Model = use('Model');
 
 class User extends Model {
     static boot() {
-        super.boot()
+        super.boot();
 
         /**
          * A hook to hash the user password before saving
          * it to the database.
          */
         this.addHook('beforeSave', async (userInstance) => {
-            let user = (userInstance as any);
+            const user = (userInstance as any);
             if (user.dirty.password) {
                 user.password = await Hash.make(user.password)
             }
-        })
+        });
     }
 
     /**
@@ -28,7 +28,7 @@ class User extends Model {
      * @return {Object}
      */
     tokens() {
-        return this.hasMany('App/Models/Token')
+        return this.hasMany('App/Models/Token');
     }
 }
 
