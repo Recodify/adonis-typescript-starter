@@ -5451,7 +5451,7 @@ interface Server {
       * @param callback? 
       * @return  
       */
-    listen(host? : 'localhost', port? : 3333, callback? : Function): HttpServer;
+    listen(host? : string, port? : string, callback? : Function): HttpServer;
         
     /**
       * Closes the HTTP server
