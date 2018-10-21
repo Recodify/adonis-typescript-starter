@@ -13,6 +13,7 @@ This is the fullstack type script boilerplate for AdonisJs, it comes pre-configu
 9.  tslint
 10. Typescript
 11. Docker
+12. Tests
 
 Manually clone the repo and then run `npm install`.
 
