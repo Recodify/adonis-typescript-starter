@@ -2,9 +2,9 @@
 import { Http } from "@adonisjs";
 
 class HealthController {
-    async index ({ request, response, view } : {request: Http.Request, response: Http.Response, view : any}) {
-        return response.status(200).json({"status": "New"});
-      }    
+    async index ({ request, response } : {request: Http.Request, response: Http.Response}) : Promise<void> {
+        response.status(200).json({"status": "New"});        
+    }    
 }
 
 export = HealthController;

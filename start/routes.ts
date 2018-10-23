@@ -13,5 +13,17 @@
 
 const Route = use('Route');
 
+// Index
 Route.on('/').render('welcome');
+
+// App
+Route.get('properties', 'PropertyController.index');
+
+// Util
 Route.get('health', 'HealthController.index');
+
+// Auth
+Route.get('/login', 'AuthController.index')
+Route.post('/login', 'AuthController.login')
+Route.get('/register', 'RegisterController.index')
+Route.post('register', 'RegisterController.doRegister')
