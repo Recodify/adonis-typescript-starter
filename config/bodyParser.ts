@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 export = {
   /*
@@ -154,4 +154,4 @@ export = {
     |
     */
   }
-}
+};

@@ -17,13 +17,13 @@ const Route = use('Route');
 Route.on('/').render('welcome');
 
 // App
-Route.get('properties', 'PropertyController.index');
+Route.get('/properties', 'PropertyController.index');
 
 // Util
-Route.get('health', 'HealthController.index');
+Route.get('/health', 'HealthController.index');
 
 // Auth
-Route.get('/login', 'AuthController.index')
-Route.post('/login', 'AuthController.login')
-Route.get('/register', 'RegisterController.index')
-Route.post('register', 'RegisterController.doRegister')
+Route.get('/login', 'AuthController.index');
+Route.post('/login', 'AuthController.login');
+Route.get('/register', 'RegisterController.index');
+Route.post('register', 'RegisterController.register');

@@ -1,10 +1,10 @@
-'use strict'
+'use strict';
 
 /** @type {import('@adonisjs/framework/src/Env')} */
-const Env = use('Env')
+const Env = use('Env');
 
 /** @type {import('@adonisjs/ignitor/src/Helpers')} */
-const Helpers = use('Helpers')
+const Helpers = use('Helpers');
 
 export = {
   /*
@@ -48,7 +48,7 @@ export = {
   |
   */
   mysql: {
-    client: 'mysql',
+    client: 'mysql2',
     connection: {
       host: Env.get('DB_HOST', 'localhost'),
       port: Env.get('DB_PORT', ''),
@@ -78,4 +78,4 @@ export = {
       database: Env.get('DB_DATABASE', 'adonis')
     }
   }
-}
+};

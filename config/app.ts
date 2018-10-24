@@ -1,4 +1,4 @@
-const Env = use('Env')
+const Env = use('Env');
 
 export = {
 
@@ -78,7 +78,6 @@ export = {
     |
     */
     jsonpCallback: 'callback',
-
 
     /*
     |--------------------------------------------------------------------------
@@ -237,4 +236,4 @@ export = {
     path: '/',
     maxAge: 7200
   }
-}
+};

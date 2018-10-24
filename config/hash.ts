@@ -1,7 +1,7 @@
-'use strict'
+'use strict';
 
 /** @type {import('@adonisjs/framework/src/Env')} */
-const Env = use('Env')
+const Env = use('Env');
 
 export = {
   /*
@@ -46,4 +46,4 @@ export = {
   argon: {
     type: 1
   }
-}
+};

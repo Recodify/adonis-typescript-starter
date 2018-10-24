@@ -1,6 +1,6 @@
-const Model = use('Model')
+const Model = use('Model');
 
 class Token extends Model {
 }
 
-export = Token
+export = Token;

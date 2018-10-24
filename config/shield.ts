@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 export = {
   /*
@@ -142,4 +142,4 @@ export = {
       maxAge: 7200
     }
   }
-}
+};
