@@ -19,7 +19,7 @@ class AuthController {
         // Attempt to login with email and password
         const authCheck = await auth.attempt(email, password);
         if (authCheck) {
-            return response.redirect('/');
+            return response.redirect('/properties');
         }
 
         return view.render('login', { error: loginMessage.error });

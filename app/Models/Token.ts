@@ -1,6 +1,8 @@
-const Model = use('Model');
+namespace Models {
+    const Model = use('Model');
 
-class Token extends Model {
+    export class Token extends Model {
+    }
+
+    module.exports = Token;
 }
-
-export = Token;

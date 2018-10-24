@@ -14,7 +14,7 @@ namespace Models {
             this.addHook('beforeSave', async (userInstance) => {
                 const user = (userInstance as any);
                 if (user.dirty.password) {
-                    user.password = await Hash.make(user.password);
+                   user.password = await Hash.make(user.password);
                 }
             });
         }

@@ -1,19 +1,19 @@
 @layout('master')
 
 @section('content')
-@if(auth.currentUser)
-<table class="table">
-    <tr>
-        <th>Character</th>
-        <th>Real Name</th>
-    </tr>
-  @each((stageName, realName) in characters)
-    <tr>
-        <td>{{ stageName }}</td>
-        <td>{{ realName }}</td>
-    </tr>
-  @endeach
-</table>
+@if(auth.user)
+    <table class="table">
+        <tr>
+            <th>Character</th>
+            <th>Real Name</th>
+        </tr>
+    @each((stageName, realName) in characters)
+        <tr>
+            <td>{{ stageName }}</td>
+            <td>{{ realName }}</td>
+        </tr>
+    @endeach
+    </table>
 @else
     <div class="subtitle">Please login</div>
 @endif
