@@ -10614,7 +10614,7 @@ declare namespace Lucid {
       */
     interface Model extends BaseModel {
         new(): Model;
-        [property: string]: any;
+        //[property: string]: any;
 
         /**
           * Returns an object of values dirty after persisting to
@@ -13010,6 +13010,7 @@ declare global {
     function use(namespace: AdonisNamespaces.Antl): Antl
     function use(namespace: AdonisNamespaces.AntlFormats): Formats
     function use(namespace: AdonisNamespaces.DatabaseTransactions): Lucid.DatabaseTransactions;
+    function use(model : string): any;
 
 }
 
@@ -13045,6 +13046,7 @@ declare global {
     function make(namespace: AdonisNamespaces.Antl): Antl
     function make(namespace: AdonisNamespaces.AntlFormats): Formats
     function make(namespace: AdonisNamespaces.DatabaseTransactions): Lucid.DatabaseTransactions;
+    function make(model : string): any;
 
     const iocResolver : Fold.ResolverManager;
 }

@@ -17,7 +17,7 @@ const Route = use('Route');
 Route.on('/').render('welcome');
 
 // App
-Route.get('/properties', 'PropertyController.index');
+Route.get('/properties', 'PropertyController.index').middleware('auth');
 
 // Util
 Route.get('/health', 'HealthController.index');

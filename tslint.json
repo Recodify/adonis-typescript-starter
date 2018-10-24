@@ -16,7 +16,9 @@
         "space-before-function-paren": false,
         "no-console": false,
         "object-literal-sort-keys": false,
-        "no-floating-promises": true
+        "no-floating-promises": true,
+        "comment-format": false,
+        "no-namespace": false
     },
     "rulesDirectory": []
 }

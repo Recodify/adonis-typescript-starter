@@ -1,7 +1,7 @@
+
 'use strict';
 import { Http, View } from "@adonisjs";
-import {User} from "../../Models/User";
-
+const User = use("App/Models/User");
 const Hash = use('Hash');
 
 class RegisterController {
@@ -11,7 +11,8 @@ class RegisterController {
 
     public async register({request, response, view} : {request: Http.Request, response: Http.Response, view: View})
     : Promise<string> {
-        const user = new User();
+        const user : Models.User = new User();
+
         user.username = request.input('name');
         user.email = request.input('email');
         user.password = await Hash.make(request.input('password'));
